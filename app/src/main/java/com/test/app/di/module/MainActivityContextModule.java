@@ -11,19 +11,19 @@ import dagger.Provides;
 
 @Module
 public class MainActivityContextModule {
-    private AlbumActivity mainActivity;
+    private AlbumActivity mAlbumActivity;
 
     public Context context;
 
-    public MainActivityContextModule(AlbumActivity mainActivity) {
-        this.mainActivity = mainActivity;
-        context = mainActivity;
+    public MainActivityContextModule(AlbumActivity albumActivity) {
+        this.mAlbumActivity = albumActivity;
+        context = albumActivity;
     }
 
     @Provides
     @ActivityScope
     public AlbumActivity providesMainActivity() {
-        return mainActivity;
+        return mAlbumActivity;
     }
 
     @Provides

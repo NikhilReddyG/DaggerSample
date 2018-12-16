@@ -18,5 +18,5 @@ public interface MainActivityComponent {
     Context getContext();
 
 
-    void injectMainActivity(AlbumActivity mainActivity);
+    void injectMainActivity(AlbumActivity mAlbumActivity);
 }

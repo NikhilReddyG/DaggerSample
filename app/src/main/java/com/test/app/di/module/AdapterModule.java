@@ -19,7 +19,7 @@ public class AdapterModule {
 
     @Provides
     @ActivityScope
-    public AlbumAdapter.ClickListener setOnClickListener(AlbumActivity mainActivity) {
-        return mainActivity;
+    public AlbumAdapter.ClickListener setOnClickListener(AlbumActivity mAlbumActivity) {
+        return mAlbumActivity;
     }
 }
